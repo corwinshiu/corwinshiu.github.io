@@ -1,113 +1,225 @@
+
 <!DOCTYPE html>
 <!--
     Plain-Academic by Vasilios Mavroudis
-    Released under the Simplified BSD License/FreeBSD (2-clause) License.
+    Released under the  Simplified BSD License/FreeBSD (2-clause) License.
     https://github.com/mavroudisv/plain-academic
+
+    Added modifications with a simple CSS, inspired from Andrej Karpathy's implementation
+		https://karpathy.ai/
+		
+		Borrowed certain CSS elements from an earlier template. ©Copyright Kards 2016.
+		Design by http://www.styleshout.com
 -->
 
 <html lang="en">
 <head>
-  <title>John Doe</title>
+
+  <title>Nilesh Negi's website</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nilesh Negi's website">
+  <meta name="keywords" content="website, Nilesh, Negi, cv, work, resume, blog">
+  <meta name="author" content="Nilesh Negi">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="./css/all.css">
+  <link rel="stylesheet" href="./css/style.css">
+  
+  <!-- Track site visitors -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155121842-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-155121842-1');
+  </script>
+
 </head>
+
+
 <body>
 
-
-<!-- Navigation -->
-	<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
-	  <div class="container">
-		<div class="navbar-header">
-		  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-		</div>
-
-		<!-- Collect the nav links, forms, and other content for toggling -->
-		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-		  <ul class="nav navbar-nav">
-				  <li><a href="index.html">Home</a></li>
-				  <li><a href="#">Projects</a></li>
-				  <li><a href="#publications">Publications</a></li> 
-				  <li><a href="#">CV</a></li> 
-		  </ul>
-		</div>
-	  </div>
-	</nav>
-  
-  <!-- Page Content -->
-    <div class="container">
-
-        <div class="row">
-
-            <!-- Entries Column -->
-            <div class="col-md-8" style="height: 100vh;">
-                
-                <!-- Main Image -->
-                <img class="img-responsive" src="photo.gif" alt=""><br>
-                
-                <div style="margin-top:3%; text-align:justify;">                
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing <a href="#">elit</a>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-					
-					<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-					
-					<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                </div>
-            </div> 
-
-            <!-- Contact Info on the Sidebar -->
-            <div class="col-md-4">
-                <div style="font-family: 'Oswald', sans-serif; font-size: 32px;"><b>John Doe</b></div><br>
-                <p><b>john at doe.com</b><br>
-                <p>Random Department<br>
-                University of Randomness<br>
-                Street<br>
-                City <br>
-                Country<br>
-                </p>
-            </div>
-            
-            
-            <!-- Links on the Sidebar -->
-            <div class="col-md-4" style="margin-top:2%">
-              <dd><a href="#">Google Scholar</a></dd> 
-              <dd><a href="#">Twitter</a></dd>
-              <dd><a href="#">LinkedIn</a></dd>
-            </div>
-            
-            
-            <!-- Publications -->
-            <div class="col-md-8" style="height: 100vh;">    
-                <h2 id="publications">Publications</h2>
-                
-                <strong>Peer-reviewed</strong><br/>
-                <ul>
-                <li class="paper" words="add, your, keywords, here"><a href="#">Full title</a> Names of the authors</li>
-                </ul>
-            
-                <strong>Technical Reports</strong><br/>
-                <ul>
-                <li class="paper" words="add, your, keywords, here"><a href="#">Full title</a>. Details of the report</li>
-                </ul>
-            </div>
-
-            
+  <!-- Home -->
+  <div class="container" id="home">
+    
+    <div class="row">
+      <div id="home-about">
+        <h1>Nilesh M Negi</h1>
+        <h2>Systems Engineer | Machine Learning</h2><br/>
+        <div id="home-icon">
+          <a href="mailto:nileshnegi@gmail.com" rel="noopener noreferrer" target="_blank"><i class="fas fa-envelope fa-2x" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/in/nileshnegi/" rel="noopener noreferrer" target="_blank"><i class="fab fa-linkedin fa-2x" aria-hidden="true"></i></a>
+          <a href="https://github.com/nileshnegi" rel="noopener noreferrer" target="_blank"><i class="fab fa-github fa-2x" aria-hidden="true"></i></a>
+          <a href="https://twitter.com/NileshNegi" rel="noopener noreferrer" target="_blank"><i class="fab fa-twitter fa-2x" aria-hidden="true"></i></a>
+          <!-- <a href=""><i class="ai ai-google-scholar ai-xs" aria-hidden="true" style="width:3vmax;"></i></a> -->
         </div>
+      </div>
+      <div id="home-img">
+        <img src="./photos/profile_photo.jpg" alt="" data-holder-rendered="true"><br/>
+      </div>
+		</div>
 
+  </div>
 
-    </div>
-    <!-- /.container -->
-    
-    <!-- Other people may like it too! -->
-    <a style="color:#b5bec9;font-size:0.8em; float:right;" href="https://github.com/mavroudisv/plain-academic">Plain Academic</a> 
-    
+  <hr>
+
+  <div class="container" id="resume">
+
+    <div class="row">
+    	<div id="resume-img">
+        <img src="photos/hpe_logo.png" alt="HPE" style="width:40%;"/><br/>
+        Email: <a href="mailto:nilesh.m.negi@hpe.com">nilesh.m.negi@hpe.com</a><br/>
+      </div>
+      <div id="resume-intro">
+				Member of the High Performance Comptuting & Artificial Intelligence team.<br/>
+				Currently working on machine learning benchmarks for training and inference workloads. <br/>
+        Before this, I used to optimize High Performance Computing applications and extrapolate their performance for Petascale and pre-Exascale systems.<br/>
+      </div>
+		</div>
+		
+    <div class="resume-timeline">
+			<div class="timeline-wrap">
+				<div class="timeline-block">
+					<div class="timeline-ico">
+						<i class="fas fa-briefcase"></i>
+					</div>
+
+					<div class="timeline-header">
+						<h3>Systems/Software Engineer Vb</h3>
+						<p>January 2020 - Present</p>
+					</div>
+
+					<div class="timeline-content">
+						<h4>AI Technologies and Enablement</h4>
+						<p>
+							<ul>
+								<li>Characterization and hyper-parameter optimization for multi-GPU scaling of <a href="https://mlperf.org/" rel="noopener noreferrer" target="_blank">MLPerf</a> training and inference benchmarks.</li>
+								<li>Support machine learning benchmarking requests from customers like Samsung (South Korea), <a href="https://github.com/mila-iqia/training">MILA</a> (Canada), Bank Mandiri (Indonesia), NCHC (Taiwan), University of Granada (Spain), TU Delft (Germany).</li>
+								<li>Speaker at <a href="https://twitter.com/HPE_IN/status/1233634776902291457?s=20">HP-CAST 2020</a>. Presented about HPE's AI group and the Deep Learning Benchmarking Suite.</li>
+							</ul>
+						</p>
+					</div>
+				</div>
+
+				<div class="timeline-block">
+					<div class="timeline-ico">
+						<i class="fas fa-briefcase"></i>
+					</div>
+
+					<div class="timeline-header">
+						<h3>Systems/Software Engineer Vb </h3>
+						<p>May 2018 - December 2019</p>
+					</div>
+
+					<div class="timeline-content">
+						<h4>HPC & AI Performance Engineering</h4>
+						<p>
+							<ul>
+								<li>Worked on HPE's winning proposal for Los Alamos National Laboratory's <a href="https://www.lanl.gov/projects/crossroads/" rel="noopener noreferrer" target="_blank">Crossroads</a>, with detailed analysis and benchmarking of PENNANT, to extrapolate performance for a 150 petaFLOP system.</li>
+								<li>Conducted characterization studies of HPC applications for Request for Proposals (RFPs) from Max Planck (Germany), IDRIS (Paris), ARCHER2 (UK), CSC (Finland), NCI (Australia).</li>
+								<li>Talked about <em>convergence of HPC & AI</em> and HPE's <em>custom deep learning accelerator</em> at the National Workshop on HPCA 2019.</li>
+								<li>Delivered a workshop on <em>Introduction to Deep Learning</em> for 100+ students at NIT Tiruchirappalli's Pragyan 2019.</li>
+							</ul>
+						</p>
+					</div>
+				</div>
+
+				<div class="timeline-block">
+					<div class="timeline-ico">
+						<i class="fas fa-briefcase"></i>
+					</div>
+
+					<div class="timeline-header">
+						<h3>Systems/Software Engineer II</h3>
+						<p>November 2015 - April 2018</p>
+					</div>
+
+					<div class="timeline-content">
+						<h4>HPC Performance Benchmarking</h4>
+						<p>
+							<ul>
+								<li>Worked with GROMACS - molecular dynamics code for biochemical systems and Quantum Espresso - ab-initio quantum chemistry codes for electronic structure calculations.</li>
+								<li>Conducted characterization studies of HPC applications for large Request for Proposals (RFPs) from India's National Supercomputing Mission, Australia's DSTG, Taiwan's NCHC.</li>
+								<li>Led a hands-on workshop on <em>Introduction to High Performance Computing</em> for MPI and OpenMP programming for 50+ undergraduate students at NIT Tiruchirappalli's Pragyan 2018.</li>
+								<li>Showcased HPE’s <a href="https://cio.economictimes.indiatimes.com/news/enterprise-services-and-applications/hpe-intel-launches-coe-to-show-high-performance-computing-as-a-service/55093837" rel="noopener noreferrer" target="_blank">HPC-as-a-Service</a> <em>Centre of Excellence</em> at the IEEE International Conference on HPC (HiPC 2017).</li>
+							</ul>
+						</p>
+					</div>
+				</div>
+			
+			</div>
+		</div>
+		
+		<div class="row">
+    	<div id="resume-img">
+				<img src="photos/hp_logo.svg" alt="Hewlett-Packard" style="width:20%"/>
+			</div>
+			<div id="resume-intro">
+        2015 college graduate hire. Was directly offered a Senior R&D Engineer position on the basis of my undergrad research and background.<br/>
+      </div>
+		</div>
+		<div class="timeline-wrap">
+			<div class="timeline-block">
+				<div class="timeline-ico">
+					<i class="fas fa-briefcase"></i>
+				</div>
+
+				<div class="timeline-header">
+					<h3>Systems/Software Engineer II</h3>
+					<p>August 2015 - October 2015</p>
+				</div>
+
+				<div class="timeline-content">
+					<h4>HPC Performance Benchmarking</h4>
+					<p>
+						<ul>
+							<li>Developed and tested a standalone suite of standard HPC codes and software stack (codename: &quot;Framework&quot;) with Dr. Dave Mullaly.</li>
+							<li>Used this suite to benchmark and compare performance of different HPE servers and reference architectures.</li>
+							<li>Presented a comparative study of HPC application performance on Intel Broadwell and Intel Knights Landing processors at Intel HPC Developer Conference.</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div id="resume-img">
+				<img src="photos/iith_logo.png" alt="IIT Hyderabad" style="width:90%"/><br/>
+				Email: <a href="mailto:ee11b023@iith.ac.in">ee11b023@iith.ac.in</a><br/>
+			</div>
+			<div id="resume-intro">
+				Before HPE, I studied Electrical Engineering at IIT Hyderabad (class of 2015).<br/>
+				The flexible course structure enabled me to explore image processing, embedded systems and micro-electronics, as well as some Computer Science courses.
+			</div>
+		</div>
+		<div class="timeline-wrap">
+			<div class="timeline-block">
+				<div class="timeline-ico">
+					<i class="fas fa-graduation-cap"></i>
+				</div>
+
+				<div class="timeline-header">
+					<h3>Bachelors Degree</h3>
+					<p>August 2011 - May 2015</p>
+				</div>
+
+				<div class="timeline-content">
+					<h4>Bachelor of Technology in Electrical Engineering (Hons.) with a Minor in Computer Science and Engineering</h4>
+					<p>
+						<ul>
+							<li>Undergraduate project on automatic profiling of immune cell migration. A short gist can be found <a href="https://drive.google.com/file/d/1VL1MsiITBF6eEJnXoy8u9KHqjDDR5Azk/view" rel="noopener noreferrer" target="_blank">here</a>.</li>
+							<li>Designed a cost-effective add-on module for existing glucometer devices to read digits displayed on the LCD screen. <a href="https://drive.google.com/file/d/1XMZFIKL9Ml1DxhernKQPNN1WJyVf3D26/view" rel="noopener noreferrer" target="_blank">Slides</a>.</li>
+							<li>Served as an undergraduate teaching assistant under Dr. Ashudeb Dutta and Dr. Amit Acharyya from January 2015 - May 2015.</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+		</div>
+
+  </div>
+
 </body>
 
 </html>
