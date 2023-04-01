@@ -22,12 +22,27 @@ table.styleprojects {
   *border-collapse: expression('separate', cellSpacing='10px');
 } 
 
+}
+
+ @media (orientation: landscape) {
+     body {
+	 flex-direction: row;
+     }
+ }
+
+ @media (orientation: portrait) {
+     body {
+	 flex-direction: column;
+     }
+ }
+
+
 </style>
 <head>
   <title>Corwin Shiu</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="google-site-verification" content="eILAIWo40-aoD01uAPoGTEhg9wJs0K-AJiQDM4PCw1E">
+  <meta name="google-site-verification" content="iP6Z5SX2oVqFrtVNWa95eN0fKk3FOEnY-xhsAy1PUFY" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
